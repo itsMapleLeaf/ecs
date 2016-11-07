@@ -15,9 +15,9 @@ createGameplayWorld() {
 
 createPlayer() {
   return new Entity([
-    new Position(100, 100),
-    new Velocity(10, 0),
-    new Drawable(awesomePlayerImage),
+    new HasPosition(100, 100),
+    new HasVelocity(10, 0),
+    new IsDrawable(awesomePlayerImage),
   ]);
 }
 
