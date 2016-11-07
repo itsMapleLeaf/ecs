@@ -6,9 +6,9 @@ import 'components.dart';
 class DrawingSystem implements System {
   void process(List<Entity> ents) {
     for (final ent in ents.where((ent) => ent.has([IsDrawable, HasPosition]))) {
-      final image = ent[IsDrawable].image;
-      final pos = ent[HasPosition];
-      image.draw(pos.x, pos.y);
+      final IsDrawable drawable = ent[IsDrawable];
+      final HasPosition pos = ent[HasPosition];
+      drawable.image.draw(pos.x, pos.y);
     }
   }
 }
