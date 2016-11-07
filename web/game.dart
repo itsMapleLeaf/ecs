@@ -14,11 +14,11 @@ World createGameplayWorld() {
 }
 
 Entity createPlayer() {
-  return new Entity([[
+  return new Entity([
     new Position(100, 100),
     new Velocity(10, 0),
     new Drawable(awesomePlayerImage),
-  ]]);
+  ]);
 }
 
 main() async {
