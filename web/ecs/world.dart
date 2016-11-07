@@ -23,7 +23,7 @@ class World {
 
   void step() {
     for (final system in systems) {
-      system.process(entities.where((ent) => ent.has(system.required)));
+      system.process(entities);
     }
   }
 }
