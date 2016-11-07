@@ -1,16 +1,16 @@
 import 'ecs/component.dart';
 
-class HasPosition implements Component {
+class Position implements Component {
   num x, y;
-  HasPosition(this.x, this.y);
+  Position(this.x, this.y);
 }
 
-class HasVelocity implements Component {
+class Velocity implements Component {
   num x, y;
-  HasVelocity(this.x, this.y);
+  Velocity(this.x, this.y);
 }
 
-class IsDrawable implements Component {
+class Drawable implements Component {
   Image image;
-  IsDrawable(this.image);
+  Drawable(this.image);
 }
