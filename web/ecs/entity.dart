@@ -9,6 +9,14 @@ class Entity {
     }
   }
 
+  void add(Component comp) {
+    components[comp.runtimeType] = comp;
+  }
+
+  void remove(Type ComponentType) {
+    components.remove(ComponentType);
+  }
+
   Component get(Type ComponentType) {
     return components[ComponentType];
   }
