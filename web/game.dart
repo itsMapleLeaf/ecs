@@ -6,14 +6,14 @@ import 'ecs/world.dart';
 import 'components.dart';
 import 'systems.dart';
 
-World createGameplayWorld() {
+createGameplayWorld() {
   return new World([
     new PhysicsSystem(),
     new DrawingSystem(),
   ]);
 }
 
-Entity createPlayer() {
+createPlayer() {
   return new Entity([
     new Position(100, 100),
     new Velocity(10, 0),
