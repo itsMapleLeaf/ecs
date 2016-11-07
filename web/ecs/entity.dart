@@ -3,9 +3,9 @@ import 'component.dart';
 class Entity {
   final components = <Type, Component>{};
 
-  Entity(List<Component> components) {
-    for (final comp in components) {
-      this.components[comp.runtimeType] = comp;
+  Entity(List<Component> componentList) {
+    for (final comp in componentList) {
+      components[comp.runtimeType] = comp;
     }
   }
 
